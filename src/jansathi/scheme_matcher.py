@@ -23,3 +23,31 @@ def match_schemes(profile: dict[str, Any], schemes: list[dict[str, Any]]) -> lis
         if audience_match and state_match:
             results.append(scheme)
     return results
+
+
+def match_schemes(schemes: list, profile: dict) -> list:
+    matches = []
+
+    state = profile.get("state")
+    occupation = profile.get("occupation")
+    age = profile.get("age")
+
+    for scheme in schemes:
+        if state and state not in scheme["states"]:
+            if "All India" not in scheme["states"]:
+                continue
+
+        if occupation and occupation not in scheme["occupations"]:
+            continue
+
+        if age is not None:
+            if age < scheme["min_age"]:
+                continue
+
+            maximum = scheme.get("max_age")
+            if maximum is not None and age > maximum:
+                continue
+
+        matches.append(scheme)
+
+    return matches

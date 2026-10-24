@@ -1,28 +1,37 @@
+
 [
   {
-    "id": "pm-kisan-example",
-    "name": "PM-KISAN (verify current criteria)",
-    "description": "A central sector scheme associated with income support for eligible landholding farmer families.",
-    "audiences": ["farmer"],
-    "states": ["all"],
-    "age_min": null,
-    "age_max": null,
-    "requires_verification": ["landholding and exclusion criteria", "current registration status", "latest official guidelines"],
-    "official_url": "https://pmkisan.gov.in/",
-    "verified": false,
-    "notes": "Prototype seed record only. Verify current eligibility and rules from the official portal before presenting as advice."
+    "id": "demo_farmer_001",
+    "name": "Demo Farmer Support Scheme",
+    "category": "agriculture",
+    "states": ["Maharashtra"],
+    "occupations": ["farmer"],
+    "min_age": 18,
+    "max_age": null,
+    "summary": "Illustrative financial support for eligible farmers.",
+    "eligibility": [
+      "Applicant is a farmer",
+      "Applicant meets the age requirement"
+    ],
+    "documents": ["Identity proof", "Land or farming records, if required"],
+    "official_url": null,
+    "verified": false
   },
   {
-    "id": "national-scholarship-portal-example",
-    "name": "National Scholarship Portal (scheme discovery)",
-    "description": "An official portal through which students can discover and access eligible scholarship schemes.",
-    "audiences": ["student"],
-    "states": ["all"],
-    "age_min": null,
-    "age_max": null,
-    "requires_verification": ["specific scholarship", "course and institution", "income and category criteria where applicable", "application dates"],
-    "official_url": "https://scholarships.gov.in/",
-    "verified": false,
-    "notes": "This is a portal, not a guarantee of eligibility for any particular scholarship. Verify the relevant scheme's current rules."
+    "id": "demo_student_001",
+    "name": "Demo Student Scholarship",
+    "category": "education",
+    "states": ["Maharashtra", "All India"],
+    "occupations": ["student"],
+    "min_age": 16,
+    "max_age": 30,
+    "summary": "Illustrative education support for eligible students.",
+    "eligibility": [
+      "Applicant is a student",
+      "Applicant meets the age and other scheme criteria"
+    ],
+    "documents": ["Education records", "Income certificate, if required"],
+    "official_url": null,
+    "verified": false
   }
 ]
