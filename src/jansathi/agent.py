@@ -1,20 +1,19 @@
-import json
 from typing import Any
-from .inferex_client import InferexClient
+
+from .groq_client import understand_conversation
 from .scheme_matcher import load_schemes, match_schemes
 from .settings import settings
+from .storage import save_transcript, save_turn
 
-SYSTEM_PROMPT = """You are JanSathi, a kind voice-first assistant helping Indian citizens discover government schemes.
-Use simple language and respond in the user's language: Marathi, Hindi, or English.
-Ask only ONE follow-up question at a time. Collect only details relevant to scheme matching, such as state and occupation/student status; age range or income range only when relevant. Never request Aadhaar numbers, OTPs, bank details, or biometrics.
-Never guarantee eligibility. Say 'potentially relevant' until official criteria have been verified. Do not invent scheme details, benefits, deadlines, or links. Be concise because answers will be spoken aloud."""
+SYSTEM_CONTEXT = "You are JanSathi. Keep responses short, friendly, and in the user's language. Never claim eligibility. Never invent government scheme facts."
+
 
 class JanSathiAgent:
-    def __init__(self, client: InferexClient | None = None) -> None:
-        self.client = client or InferexClient()
+    def __init__(self, client=None) -> None:
+        # `client` is accepted for compatibility with the earlier constructor.
         self.schemes = load_schemes(settings.schemes_file)
-        self.history: list[dict[str, str]] = [{"role": "system", "content": SYSTEM_PROMPT}]
-        self.profile: dict[str, Any] = {}
+        self.history: list[dict[str, str]] = []
+        self.profile: dict[str, Any] = {"state": None, "occupation": None, "age": None}
         self.language = settings.default_language
         self.turns = 0
 
@@ -22,23 +21,45 @@ class JanSathiAgent:
         clean_text = user_text.strip()
         if not clean_text:
             return "I didn't catch that. Please say it again."
+
         self.turns += 1
         self.history.append({"role": "user", "content": clean_text})
-        schemes = match_schemes(self.profile, self.schemes)
-        context = {
-            "turn": self.turns,
-            "known_profile": self.profile,
-            "candidate_schemes": [
-                {k: scheme.get(k) for k in ("name", "description", "audiences", "requires_verification", "official_url", "verified")}
-                for scheme in schemes
-            ],
-            "instruction": "Understand the latest user turn. If key profile details are missing, ask one concise follow-up question. Otherwise explain potentially relevant schemes, why they may match, what must be verified, and the official link. Do not claim eligibility. Reply in the user's language."
-        }
-        # Add current structured context without relying on the LLM as the eligibility engine.
-        self.history.append({"role": "system", "content": "CURRENT_CONTEXT_JSON: " + json.dumps(context, ensure_ascii=False)})
-        answer = self.client.chat(self.history)
-        # Keep history bounded for a lightweight local prototype.
-        self.history.append({"role": "assistant", "content": answer})
-        if len(self.history) > 13:
-            self.history = [self.history[0]] + self.history[-12:]
-        return answer
+        try:
+            result = understand_conversation(
+                [{"role": "system", "content": SYSTEM_CONTEXT}, *self.history]
+            )
+            extracted = result.get("profile", {})
+            for key in ("state", "occupation", "age"):
+                value = extracted.get(key)
+                if value is not None:
+                    self.profile[key] = value
+            self.language = result.get("language") or self.language
+
+            matches = match_schemes(self.profile, self.schemes)
+            if matches:
+                lines = []
+                for scheme in matches[:3]:
+                    status = "verified" if scheme.get("verified") else "NOT VERIFIED — illustrative demo data"
+                    lines.append(f"• {scheme.get('name', 'Unnamed scheme')} [{status}]")
+                    summary = scheme.get("summary")
+                    if summary:
+                        lines.append(f"  {summary}")
+                    if scheme.get("official_url"):
+                        lines.append(f"  Official link: {scheme['official_url']}")
+                answer = result.get("response", "I found potentially relevant records.")
+                answer += "\n\nPotentially relevant records (not an eligibility decision):\n" + "\n".join(lines)
+            else:
+                answer = result.get("response", "I can help narrow this down.")
+                if self.profile.get("state") or self.profile.get("occupation"):
+                    answer += "\nI couldn't find a matching record in the current demo database."
+
+            save_transcript(clean_text, self.language)
+            save_turn(clean_text, answer, self.language)
+            self.history.append({"role": "assistant", "content": answer})
+            if len(self.history) > 12:
+                self.history = self.history[-12:]
+            return answer
+        except Exception as exc:
+            # Print a useful local error without ever printing credentials.
+            print(f"\n[JanSathi error] {type(exc).__name__}: {exc}")
+            return "Sorry, I couldn't process that just now. Please check the terminal error and try again."

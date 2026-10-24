@@ -9,45 +9,31 @@ def load_schemes(path: Path) -> list[dict[str, Any]]:
 
 
 def match_schemes(profile: dict[str, Any], schemes: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    """Conservative keyword matching for the MVP; this does not decide eligibility."""
-    occupation = (profile.get("occupation") or "").strip().lower()
-    state = (profile.get("state") or "").strip().lower()
-    results = []
-    for scheme in schemes:
-        audiences = [item.lower() for item in scheme.get("audiences", [])]
-        states = [item.lower() for item in scheme.get("states", [])]
-        audience_match = not occupation or any(
-            term in occupation or occupation in term for term in audiences
-        )
-        state_match = not state or "all" in states or state in states
-        if audience_match and state_match:
-            results.append(scheme)
-    return results
-
-
-def match_schemes(schemes: list, profile: dict) -> list:
-    matches = []
-
-    state = profile.get("state")
-    occupation = profile.get("occupation")
+    """Return potentially relevant records; this is not an eligibility decision."""
+    occupation = str(profile.get("occupation") or "").strip().lower()
+    state = str(profile.get("state") or "").strip().lower()
     age = profile.get("age")
+    try:
+        age = int(age) if age is not None else None
+    except (TypeError, ValueError):
+        age = None
 
+    matches: list[dict[str, Any]] = []
     for scheme in schemes:
-        if state and state not in scheme["states"]:
-            if "All India" not in scheme["states"]:
-                continue
+        occupations = [str(x).strip().lower() for x in scheme.get("occupations", scheme.get("audiences", []))]
+        states = [str(x).strip().lower() for x in scheme.get("states", [])]
 
-        if occupation and occupation not in scheme["occupations"]:
+        if occupation and occupations:
+            if not any(occupation == item or occupation in item or item in occupation for item in occupations):
+                continue
+        if state and states:
+            if not any(item in {"all", "all india", "india"} for item in states) and state not in states:
+                continue
+        minimum = scheme.get("min_age")
+        maximum = scheme.get("max_age")
+        if age is not None and minimum is not None and age < minimum:
             continue
-
-        if age is not None:
-            if age < scheme["min_age"]:
-                continue
-
-            maximum = scheme.get("max_age")
-            if maximum is not None and age > maximum:
-                continue
-
+        if age is not None and maximum is not None and age > maximum:
+            continue
         matches.append(scheme)
-
     return matches
