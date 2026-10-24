@@ -1,37 +1,2292 @@
-
 [
   {
-    "id": "demo_farmer_001",
-    "name": "Demo Farmer Support Scheme",
-    "category": "agriculture",
-    "states": ["Maharashtra"],
-    "occupations": ["farmer"],
-    "min_age": 18,
-    "max_age": null,
-    "summary": "Illustrative financial support for eligible farmers.",
-    "eligibility": [
-      "Applicant is a farmer",
-      "Applicant meets the age requirement"
+    "id": "pm_kisan",
+    "name": "Pradhan Mantri Kisan Samman Nidhi (PM-KISAN)",
+    "category": "farmer_income_support",
+    "summary": "Central income support for eligible landholding farmer families.",
+    "benefit": "₹6,000 per year in three instalments, subject to eligibility and verification.",
+    "eligibility": "Landholding farmer families under scheme rules; exclusions apply, including specified institutional, public-office, government-service and income-tax categories.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
     ],
-    "documents": ["Identity proof", "Land or farming records, if required"],
-    "official_url": null,
-    "verified": false
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://www.pmkisan.gov.in/",
+    "application_url": "https://www.pmkisan.gov.in/",
+    "states": [
+      "all india"
+    ],
+    "occupations": [
+      "farmer",
+      "agriculture",
+      "cultivator"
+    ],
+    "audiences": [
+      "farmer",
+      "agriculture",
+      "cultivator"
+    ],
+    "keywords": [
+      "PM Kisan",
+      "farmer money",
+      "शेतकरी",
+      "किसान सम्मान निधि",
+      "pm kisan yojana",
+      "kisan ke paise",
+      "शेतकऱ्यांना पैसे",
+      "किसान योजना"
+    ],
+    "verified": true,
+    "source_type": "PM-KISAN official portal",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "eKYC and land-record checks may apply; check beneficiary status and exclusions.",
+    "min_age": null,
+    "max_age": null,
+    "age_requirement": "No single age cutoff stated here; landholding-family rules and exclusions matter."
   },
   {
-    "id": "demo_student_001",
-    "name": "Demo Student Scholarship",
-    "category": "education",
-    "states": ["Maharashtra", "All India"],
-    "occupations": ["student"],
-    "min_age": 16,
-    "max_age": 30,
-    "summary": "Illustrative education support for eligible students.",
-    "eligibility": [
-      "Applicant is a student",
-      "Applicant meets the age and other scheme criteria"
+    "id": "namo_shetkari",
+    "name": "Namo Shetkari Mahasanman Nidhi Yojana",
+    "category": "farmer_income_support",
+    "summary": "Maharashtra state income-support scheme listed on the state DBT portal for eligible farmers linked to PM-KISAN rules.",
+    "benefit": "State income support under current Maharashtra rules; confirm the current installment amount and status on the official portal.",
+    "eligibility": "Generally linked to eligible PM-KISAN farmer families in Maharashtra; current exclusions and verification rules apply.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
     ],
-    "documents": ["Education records", "Income certificate, if required"],
-    "official_url": null,
-    "verified": false
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://mahadbt.maharashtra.gov.in/",
+    "application_url": "https://mahadbt.maharashtra.gov.in/",
+    "states": [
+      "maharashtra"
+    ],
+    "occupations": [
+      "farmer",
+      "agriculture",
+      "cultivator"
+    ],
+    "audiences": [
+      "farmer",
+      "agriculture",
+      "cultivator"
+    ],
+    "keywords": [
+      "Namo Shetkari",
+      "NSMNY",
+      "नमो शेतकरी",
+      "Maharashtra farmer payment",
+      "namo shetkari yojna",
+      "namo shetkari yojana",
+      "नमो शेतकरी योजना"
+    ],
+    "verified": true,
+    "source_type": "Maharashtra Aaple Sarkar DBT",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Portal listing does not mean payment is approved; check current state rules and status.",
+    "min_age": null,
+    "max_age": null,
+    "age_requirement": "No separate age cutoff stated here; PM-KISAN linkage and current Maharashtra rules matter."
+  },
+  {
+    "id": "pmfby",
+    "name": "Pradhan Mantri Fasal Bima Yojana (PMFBY)",
+    "category": "crop_insurance",
+    "summary": "Crop insurance for notified crops and areas against specified crop losses under the applicable season's rules.",
+    "benefit": "Insurance claim for covered losses according to the policy and notified sum insured; amounts vary.",
+    "eligibility": "Farmers growing notified crops in notified areas and meeting the season's enrolment rules.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://pmfby.gov.in/",
+    "application_url": "https://pmfby.gov.in/",
+    "states": [
+      "all india"
+    ],
+    "occupations": [
+      "farmer",
+      "agriculture",
+      "cultivator",
+      "tenant farmer"
+    ],
+    "audiences": [
+      "farmer",
+      "agriculture",
+      "cultivator",
+      "tenant farmer"
+    ],
+    "keywords": [
+      "crop insurance",
+      "PMFBY",
+      "पीक विमा",
+      "फसल बीमा",
+      "drought crop loss",
+      "pik vima",
+      "pik vima yojana",
+      "fasal bima",
+      "पीक विमा योजना"
+    ],
+    "verified": true,
+    "source_type": "PMFBY official portal",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Season deadlines, notified crops and enrolment rules change; do not promise a claim.",
+    "min_age": null,
+    "max_age": null,
+    "age_requirement": "No universal age cutoff stated here; eligible cultivator, notified crop/area and season rules matter."
+  },
+  {
+    "id": "kcc",
+    "name": "Kisan Credit Card (KCC)",
+    "category": "agriculture_credit",
+    "summary": "Bank credit facility for eligible farmers' cultivation and related agricultural needs.",
+    "benefit": "Sanctioned revolving credit limit; amount and interest depend on bank assessment and current policy.",
+    "eligibility": "Eligible farmers and other permitted agricultural borrowers under bank rules.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://www.myscheme.gov.in/",
+    "application_url": "https://www.myscheme.gov.in/",
+    "states": [
+      "all india"
+    ],
+    "occupations": [
+      "farmer",
+      "agriculture",
+      "cultivator",
+      "livestock farmer",
+      "fisher"
+    ],
+    "audiences": [
+      "farmer",
+      "agriculture",
+      "cultivator",
+      "livestock farmer",
+      "fisher"
+    ],
+    "keywords": [
+      "KCC",
+      "farm loan",
+      "crop loan",
+      "किसान क्रेडिट कार्ड",
+      "शेतकरी कर्ज",
+      "kisan credit card",
+      "kcc loan",
+      "sheti karj",
+      "शेती कर्ज"
+    ],
+    "verified": true,
+    "source_type": "myScheme government directory",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Credit is not a grant; lender approval is required.",
+    "min_age": null,
+    "max_age": null,
+    "age_requirement": "Age limits vary by lender and loan product; ask the bank when applying."
+  },
+  {
+    "id": "pmksy_micro",
+    "name": "PM Krishi Sinchayee Yojana – Per Drop More Crop (Micro-Irrigation)",
+    "category": "irrigation",
+    "summary": "Supports eligible micro-irrigation such as drip and sprinkler systems through state implementation.",
+    "benefit": "Component-based subsidy; rate and ceilings depend on current state rules and beneficiary category.",
+    "eligibility": "Farmers who meet current state, land, water and equipment/component requirements.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://mahadbt.maharashtra.gov.in/",
+    "application_url": "https://mahadbt.maharashtra.gov.in/",
+    "states": [
+      "maharashtra"
+    ],
+    "occupations": [
+      "farmer",
+      "agriculture",
+      "cultivator"
+    ],
+    "audiences": [
+      "farmer",
+      "agriculture",
+      "cultivator"
+    ],
+    "keywords": [
+      "drip irrigation",
+      "sprinkler",
+      "PMKSY",
+      "ठिबक सिंचन",
+      "तुषार सिंचन",
+      "thibak sinchan",
+      "thibak",
+      "tushar sinchan",
+      "ठिबक",
+      "ड्रिप"
+    ],
+    "verified": true,
+    "source_type": "MahaDBT Farmer Schemes",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Check active component, subsidy rate and application window on the live portal.",
+    "min_age": null,
+    "max_age": null,
+    "age_requirement": "No universal age cutoff stated here; state component and land/cultivation conditions apply."
+  },
+  {
+    "id": "farm_mechanization",
+    "name": "Sub-Mission on Agricultural Mechanization / State Agriculture Mechanization Scheme",
+    "category": "farm_equipment",
+    "summary": "Maharashtra lists agricultural mechanization support for eligible equipment and components.",
+    "benefit": "Assistance for approved equipment/components; amount varies by item and applicant category.",
+    "eligibility": "Farmers meeting current Agriculture Department rules, equipment specifications and selection conditions.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://mahadbt.maharashtra.gov.in/Farmer/Login/FCFSNonAadhaarProfileList",
+    "application_url": "https://mahadbt.maharashtra.gov.in/Farmer/Login/FCFSNonAadhaarProfileList",
+    "states": [
+      "maharashtra"
+    ],
+    "occupations": [
+      "farmer",
+      "agriculture",
+      "cultivator"
+    ],
+    "audiences": [
+      "farmer",
+      "agriculture",
+      "cultivator"
+    ],
+    "keywords": [
+      "tractor",
+      "farm machinery",
+      "mechanization",
+      "कृषी यांत्रिकीकरण",
+      "शेतीची यंत्रे"
+    ],
+    "verified": true,
+    "source_type": "MahaDBT Farmer Schemes",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Farmer ID and component-specific selection rules may apply.",
+    "min_age": null,
+    "max_age": null,
+    "age_requirement": "No universal age cutoff stated here; current Maharashtra component rules apply."
+  },
+  {
+    "id": "nfsm",
+    "name": "National Food Security Mission (NFSM) – Maharashtra components",
+    "category": "crop_productivity",
+    "summary": "Supports approved interventions for selected food grains, oilseeds and commercial crops through state components.",
+    "benefit": "Component-based support; there is no single universal cash benefit.",
+    "eligibility": "Farmers and activities covered by current state, district, crop and component rules.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://mahadbt.maharashtra.gov.in/",
+    "application_url": "https://mahadbt.maharashtra.gov.in/",
+    "states": [
+      "maharashtra"
+    ],
+    "occupations": [
+      "farmer",
+      "agriculture",
+      "cultivator"
+    ],
+    "audiences": [
+      "farmer",
+      "agriculture",
+      "cultivator"
+    ],
+    "keywords": [
+      "NFSM",
+      "seeds",
+      "food grains",
+      "oilseeds",
+      "cotton",
+      "sugarcane",
+      "बियाणे"
+    ],
+    "verified": true,
+    "source_type": "MahaDBT Farmer Schemes",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Check crop, district and active component.",
+    "min_age": null,
+    "max_age": null,
+    "age_requirement": "No universal age cutoff stated here; current crop and component rules apply."
+  },
+  {
+    "id": "birsa_munda",
+    "name": "Birsa Munda Krishi Kranti Yojana",
+    "category": "tribal_farmer_support",
+    "summary": "Maharashtra agricultural support scheme listed for eligible Scheduled Tribe farmers.",
+    "benefit": "Support for approved agricultural components under current guidelines.",
+    "eligibility": "Eligible ST farmers who meet the applicable land, category and component conditions.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://mahadbt.maharashtra.gov.in/",
+    "application_url": "https://mahadbt.maharashtra.gov.in/",
+    "states": [
+      "maharashtra"
+    ],
+    "occupations": [
+      "farmer",
+      "agriculture",
+      "cultivator"
+    ],
+    "audiences": [
+      "farmer",
+      "agriculture",
+      "cultivator"
+    ],
+    "keywords": [
+      "Birsa Munda",
+      "ST farmer",
+      "tribal farmer",
+      "आदिवासी शेतकरी"
+    ],
+    "verified": true,
+    "source_type": "MahaDBT Farmer Schemes",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Exact components and current eligibility must be checked in the latest government resolution/portal.",
+    "min_age": null,
+    "max_age": null,
+    "age_requirement": "No universal age cutoff stated here; ST category and current component rules apply."
+  },
+  {
+    "id": "ambedkar_krushi",
+    "name": "Dr. Babasaheb Ambedkar Krushi Swavalamban Yojana",
+    "category": "sc_farmer_support",
+    "summary": "Maharashtra agricultural support scheme listed for eligible Scheduled Caste farmers.",
+    "benefit": "Assistance for approved agricultural development components; amount depends on current rules.",
+    "eligibility": "Eligible SC farmers meeting land, category, income and component requirements.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://mahadbt.maharashtra.gov.in/",
+    "application_url": "https://mahadbt.maharashtra.gov.in/",
+    "states": [
+      "maharashtra"
+    ],
+    "occupations": [
+      "farmer",
+      "agriculture",
+      "cultivator"
+    ],
+    "audiences": [
+      "farmer",
+      "agriculture",
+      "cultivator"
+    ],
+    "keywords": [
+      "Dr Babasaheb Ambedkar",
+      "SC farmer",
+      "अनुसूचित जाती शेतकरी"
+    ],
+    "verified": true,
+    "source_type": "MahaDBT Farmer Schemes",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Confirm current components, eligibility and required certificates.",
+    "min_age": null,
+    "max_age": null,
+    "age_requirement": "No universal age cutoff stated here; SC category and current component rules apply."
+  },
+  {
+    "id": "midh",
+    "name": "Mission for Integrated Development of Horticulture (MIDH)",
+    "category": "horticulture",
+    "summary": "Supports eligible horticulture development activities through state-implemented components.",
+    "benefit": "Component-based assistance for eligible horticulture activities; rates and crops vary.",
+    "eligibility": "Growers, groups or other applicants allowed by current component guidelines.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://mahadbt.maharashtra.gov.in/",
+    "application_url": "https://mahadbt.maharashtra.gov.in/",
+    "states": [
+      "maharashtra"
+    ],
+    "occupations": [
+      "farmer",
+      "horticulture grower",
+      "orchard farmer"
+    ],
+    "audiences": [
+      "farmer",
+      "horticulture grower",
+      "orchard farmer"
+    ],
+    "keywords": [
+      "horticulture",
+      "orchard",
+      "fruit trees",
+      "बागायती",
+      "फळबाग"
+    ],
+    "verified": true,
+    "source_type": "MahaDBT Farmer Schemes",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Check current crop/district coverage and subsidy norms.",
+    "min_age": null,
+    "max_age": null,
+    "age_requirement": "No universal age cutoff stated here; component and applicant-type rules apply."
+  },
+  {
+    "id": "rainfed",
+    "name": "Rainfed Area Development Programme / PM-RKVY rainfed components",
+    "category": "integrated_farming",
+    "summary": "Maharashtra lists rainfed-area development support for eligible integrated farming activities.",
+    "benefit": "Support for approved integrated farming activities; current guidelines control the amount and combinations.",
+    "eligibility": "Farmers in covered areas who meet current integrated-farming, Farmer ID and beneficiary conditions.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://mahadbt.maharashtra.gov.in/",
+    "application_url": "https://mahadbt.maharashtra.gov.in/",
+    "states": [
+      "maharashtra"
+    ],
+    "occupations": [
+      "farmer",
+      "agriculture",
+      "livestock farmer"
+    ],
+    "audiences": [
+      "farmer",
+      "agriculture",
+      "livestock farmer"
+    ],
+    "keywords": [
+      "rainfed",
+      "integrated farming",
+      "beekeeping",
+      "vermicompost",
+      "कोरडवाहू शेती"
+    ],
+    "verified": true,
+    "source_type": "MahaDBT Farmer Schemes",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Check the current activity combinations and application cycle.",
+    "min_age": null,
+    "max_age": null,
+    "age_requirement": "No universal age cutoff stated here; current programme and activity rules apply."
+  },
+  {
+    "id": "bhausaheb_fundkar",
+    "name": "Bhausaheb Fundkar Phalbaag Lagvad Yojana",
+    "category": "orchard_support",
+    "summary": "Maharashtra orchard-plantation scheme listed for eligible fruit-crop planting.",
+    "benefit": "Assistance for eligible orchard planting under current norms.",
+    "eligibility": "Farmers meeting current crop, land, planting and maintenance conditions.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://mahadbt.maharashtra.gov.in/",
+    "application_url": "https://mahadbt.maharashtra.gov.in/",
+    "states": [
+      "maharashtra"
+    ],
+    "occupations": [
+      "farmer",
+      "orchard farmer",
+      "horticulture grower"
+    ],
+    "audiences": [
+      "farmer",
+      "orchard farmer",
+      "horticulture grower"
+    ],
+    "keywords": [
+      "fruit orchard",
+      "Phalbaag",
+      "फळबाग लागवड",
+      "fruit plantation"
+    ],
+    "verified": true,
+    "source_type": "MahaDBT Farmer Schemes",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Crop lists, planting norms and current application availability can change.",
+    "min_age": null,
+    "max_age": null,
+    "age_requirement": "No universal age cutoff stated here; current crop, land and planting conditions apply."
+  },
+  {
+    "id": "gopinath_munde",
+    "name": "Gopinath Munde Shetkari Apghat Suraksha Sanugrah Anudan Yojana",
+    "category": "farmer_accident_assistance",
+    "summary": "Maharashtra scheme listed for ex-gratia assistance in qualifying farmer accident cases.",
+    "benefit": "Ex-gratia assistance in qualifying accident/death cases under current rules.",
+    "eligibility": "Cases involving farmers covered by current scheme rules; accident type, age, documents and claim deadlines matter.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://mahadbt.maharashtra.gov.in/",
+    "application_url": "https://mahadbt.maharashtra.gov.in/",
+    "states": [
+      "maharashtra"
+    ],
+    "occupations": [
+      "farmer",
+      "agriculture",
+      "cultivator",
+      "farmer family"
+    ],
+    "audiences": [
+      "farmer",
+      "agriculture",
+      "cultivator",
+      "farmer family"
+    ],
+    "keywords": [
+      "farmer accident",
+      "Gopinath Munde",
+      "शेतकरी अपघात",
+      "अपघात अनुदान"
+    ],
+    "verified": true,
+    "source_type": "MahaDBT Farmer Schemes",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Contact the Agriculture Department promptly; not every accident is covered.",
+    "min_age": null,
+    "max_age": null,
+    "age_requirement": "Age and accident-case conditions depend on the current government rules; confirm with the Agriculture Department."
+  },
+  {
+    "id": "pmfme",
+    "name": "PM Formalisation of Micro Food Processing Enterprises (PMFME)",
+    "category": "small_business_food_processing",
+    "summary": "Programme for formalising and upgrading eligible micro food-processing enterprises.",
+    "benefit": "Credit-linked or group/common-infrastructure support under current rules; varies by component.",
+    "eligibility": "Eligible individual micro food-processing units, SHGs, FPOs, cooperatives and other listed applicants.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://pmfme.mofpi.gov.in/",
+    "application_url": "https://pmfme.mofpi.gov.in/",
+    "states": [
+      "all india"
+    ],
+    "occupations": [
+      "small business owner",
+      "food processor",
+      "farmer",
+      "self help group",
+      "entrepreneur"
+    ],
+    "audiences": [
+      "small business owner",
+      "food processor",
+      "farmer",
+      "self help group",
+      "entrepreneur"
+    ],
+    "keywords": [
+      "food processing",
+      "pickle business",
+      "papad",
+      "PMFME",
+      "अन्न प्रक्रिया"
+    ],
+    "verified": true,
+    "source_type": "Ministry of Food Processing Industries",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Check current application availability and Maharashtra nodal agency instructions.",
+    "min_age": null,
+    "max_age": null,
+    "age_requirement": "No universal age cutoff stated here; enterprise, component and applicant rules apply."
+  },
+  {
+    "id": "pmmsy",
+    "name": "Pradhan Mantri Matsya Sampada Yojana (PMMSY)",
+    "category": "fisheries",
+    "summary": "Supports eligible fisheries, aquaculture, infrastructure and livelihood activities.",
+    "benefit": "Component-specific assistance; amount and beneficiary contribution depend on current rules.",
+    "eligibility": "Fishers, fish farmers, entrepreneurs, cooperatives and groups permitted by the active component.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://dof.gov.in/",
+    "application_url": "https://dof.gov.in/",
+    "states": [
+      "all india"
+    ],
+    "occupations": [
+      "fisher",
+      "fish farmer",
+      "aquaculture farmer",
+      "entrepreneur"
+    ],
+    "audiences": [
+      "fisher",
+      "fish farmer",
+      "aquaculture farmer",
+      "entrepreneur"
+    ],
+    "keywords": [
+      "fisheries",
+      "fish farming",
+      "aquaculture",
+      "मच्छीमार",
+      "मासे पालन"
+    ],
+    "verified": true,
+    "source_type": "Department of Fisheries",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Check active Maharashtra component and application window.",
+    "min_age": null,
+    "max_age": null,
+    "age_requirement": "No universal age cutoff stated here; eligibility depends on the active fisheries component."
+  },
+  {
+    "id": "ladki_bahin",
+    "name": "Mukhyamantri Majhi Ladki Bahin Yojana",
+    "category": "women_cash_assistance",
+    "summary": "Maharashtra women's assistance scheme; official portal publishes scheme information and government resolutions.",
+    "benefit": "Monthly assistance under current state rules; confirm the present amount and payment status on the official portal.",
+    "eligibility": "Women meeting the latest Maharashtra residence, age, income, family and exclusion conditions.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://ladakibahin.maharashtra.gov.in/scheme_information",
+    "application_url": "https://ladakibahin.maharashtra.gov.in/scheme_information",
+    "states": [
+      "maharashtra"
+    ],
+    "occupations": [
+      "woman",
+      "homemaker",
+      "worker",
+      "self employed",
+      "student"
+    ],
+    "audiences": [
+      "woman",
+      "homemaker",
+      "worker",
+      "self employed",
+      "student"
+    ],
+    "keywords": [
+      "Ladki Bahin",
+      "Majhi Ladki Bahin",
+      "लाडकी बहीण",
+      "महिला आर्थिक मदत",
+      "ladki bahin yojana",
+      "majhi ladki bahin",
+      "ladaki bahin",
+      "लाडकी बहीण योजना"
+    ],
+    "verified": true,
+    "source_type": "Maharashtra Women and Child Development",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Rules have changed over time; use the latest government resolution.",
+    "min_age": 21,
+    "max_age": 65,
+    "age_requirement": "Generally described as ages 21–65; verify the latest Maharashtra government resolution because rules can change."
+  },
+  {
+    "id": "sc_post_matric",
+    "name": "MahaDBT Post-Matric Scholarship for Scheduled Caste students",
+    "category": "education_scholarship",
+    "summary": "Maharashtra post-matric scholarship route for eligible SC students in approved courses/institutions.",
+    "benefit": "Scholarship and/or approved fee support according to course and category rules.",
+    "eligibility": "SC students domiciled in Maharashtra who meet course, institution, income and other conditions.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://mahadbt.maharashtra.gov.in/",
+    "application_url": "https://mahadbt.maharashtra.gov.in/",
+    "states": [
+      "maharashtra"
+    ],
+    "occupations": [
+      "student",
+      "college student",
+      "learner"
+    ],
+    "audiences": [
+      "student",
+      "college student",
+      "learner"
+    ],
+    "keywords": [
+      "SC scholarship",
+      "post matric",
+      "college fees",
+      "अनुसूचित जाती शिष्यवृत्ती"
+    ],
+    "verified": true,
+    "source_type": "MahaDBT",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Academic-year dates, income limits and course rules must be checked live.",
+    "min_age": null,
+    "max_age": null,
+    "age_requirement": "No single age cutoff stated here; course, category, income and academic-year rules apply."
+  },
+  {
+    "id": "ebc_rajshri_shahu",
+    "name": "Rajarshi Chhatrapati Shahu Maharaj Shikshan Shulkh Shishyavrutti (EBC)",
+    "category": "education_fee_support",
+    "summary": "Maharashtra fee-scholarship scheme listed for eligible students in covered categories and courses.",
+    "benefit": "Eligible tuition/exam-fee support according to current course-specific rules.",
+    "eligibility": "Students meeting current category, income, domicile, course and academic requirements.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://mahadbt.maharashtra.gov.in/",
+    "application_url": "https://mahadbt.maharashtra.gov.in/",
+    "states": [
+      "maharashtra"
+    ],
+    "occupations": [
+      "student",
+      "college student",
+      "learner"
+    ],
+    "audiences": [
+      "student",
+      "college student",
+      "learner"
+    ],
+    "keywords": [
+      "EBC scholarship",
+      "Rajarshi Shahu",
+      "tuition fees",
+      "शिक्षण शुल्क शिष्यवृत्ती"
+    ],
+    "verified": true,
+    "source_type": "MahaDBT",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Do not promise full fee reimbursement; current ceilings and rules apply.",
+    "min_age": null,
+    "max_age": null,
+    "age_requirement": "No single age cutoff stated here; course, income and current academic rules apply."
+  },
+  {
+    "id": "panjabrao_hostel",
+    "name": "Dr. Panjabrao Deshmukh Vasatigruh Nirvah Bhatta Yojana",
+    "category": "student_hostel_allowance",
+    "summary": "Maharashtra student hostel/living-expense allowance scheme listed on MahaDBT.",
+    "benefit": "Hostel/living-expense allowance according to current location, category and course rules.",
+    "eligibility": "Students meeting current domicile, course, income, admission and hostel/day-scholar conditions.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://mahadbt.maharashtra.gov.in/",
+    "application_url": "https://mahadbt.maharashtra.gov.in/",
+    "states": [
+      "maharashtra"
+    ],
+    "occupations": [
+      "student",
+      "college student",
+      "learner"
+    ],
+    "audiences": [
+      "student",
+      "college student",
+      "learner"
+    ],
+    "keywords": [
+      "Panjabrao Deshmukh",
+      "hostel allowance",
+      "वसतिगृह निर्वाह भत्ता"
+    ],
+    "verified": true,
+    "source_type": "MahaDBT",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Verify current allowance and hostel documentation requirements.",
+    "min_age": null,
+    "max_age": null,
+    "age_requirement": "No single age cutoff stated here; course, income, domicile and hostel conditions apply."
+  },
+  {
+    "id": "nsp",
+    "name": "National Scholarship Portal (NSP) – scholarship listings",
+    "category": "education_scholarship",
+    "summary": "Official portal listing multiple central and state scholarships, eligibility information, dates and status.",
+    "benefit": "Depends on the specific scholarship; the portal itself is not one single scholarship.",
+    "eligibility": "Varies by individual scholarship, course, income, category, merit and institution.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://scholarships.gov.in/All-Scholarships",
+    "application_url": "https://scholarships.gov.in/All-Scholarships",
+    "states": [
+      "all india"
+    ],
+    "occupations": [
+      "student",
+      "school student",
+      "college student",
+      "learner"
+    ],
+    "audiences": [
+      "student",
+      "school student",
+      "college student",
+      "learner"
+    ],
+    "keywords": [
+      "NSP",
+      "national scholarship",
+      "छात्रवृत्ति",
+      "शिष्यवृत्ती"
+    ],
+    "verified": true,
+    "source_type": "National Scholarship Portal",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Check live scheme names and deadlines for the current academic year.",
+    "min_age": null,
+    "max_age": null,
+    "age_requirement": "Depends on the individual scholarship; each listing has its own rules."
+  },
+  {
+    "id": "pm_yasasvi",
+    "name": "PM YASASVI – Top Class Education for OBC, EBC and DNT students",
+    "category": "education_scholarship",
+    "summary": "Central scholarship listing for eligible OBC, EBC and DNT students in covered institutions/courses.",
+    "benefit": "Education-related support under current scheme guidelines; coverage varies by course and institution.",
+    "eligibility": "Students in notified categories who meet current income, merit, institution and course conditions.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://scholarships.gov.in/All-Scholarships",
+    "application_url": "https://scholarships.gov.in/All-Scholarships",
+    "states": [
+      "all india"
+    ],
+    "occupations": [
+      "student",
+      "college student",
+      "learner"
+    ],
+    "audiences": [
+      "student",
+      "college student",
+      "learner"
+    ],
+    "keywords": [
+      "PM YASASVI",
+      "OBC scholarship",
+      "EBC scholarship",
+      "DNT scholarship"
+    ],
+    "verified": true,
+    "source_type": "National Scholarship Portal",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Check current institution list, eligibility and dates.",
+    "min_age": null,
+    "max_age": null,
+    "age_requirement": "Depends on the current scholarship notice, course and institution; check the current academic-year rules."
+  },
+  {
+    "id": "nmmss",
+    "name": "National Means-cum-Merit Scholarship Scheme (NMMSS)",
+    "category": "school_scholarship",
+    "summary": "Scholarship programme for eligible meritorious students from economically weaker sections.",
+    "benefit": "Scholarship at the rate prescribed by current Ministry guidelines, subject to selection and renewal.",
+    "eligibility": "Students meeting current school stage, income, examination and continuation criteria.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://scholarships.gov.in/",
+    "application_url": "https://scholarships.gov.in/",
+    "states": [
+      "all india"
+    ],
+    "occupations": [
+      "student",
+      "school student"
+    ],
+    "audiences": [
+      "student",
+      "school student"
+    ],
+    "keywords": [
+      "NMMSS",
+      "school scholarship",
+      "merit scholarship",
+      "राष्ट्रीय साधन-सह-योग्यता"
+    ],
+    "verified": true,
+    "source_type": "National Scholarship Portal",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Selection test, marks and deadlines follow current notification.",
+    "min_age": null,
+    "max_age": null,
+    "age_requirement": "School-stage and examination rules apply rather than one universal age cutoff."
+  },
+  {
+    "id": "pmmvy",
+    "name": "Pradhan Mantri Matru Vandana Yojana (PMMVY)",
+    "category": "maternity_support",
+    "summary": "Maternity benefit programme for eligible pregnant women and lactating mothers.",
+    "benefit": "Cash benefit under current rules; payment conditions depend on pregnancy/child and eligibility category.",
+    "eligibility": "Women who meet current scheme criteria, exclusions and documentation rules.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://pmmvy.wcd.gov.in/",
+    "application_url": "https://pmmvy.wcd.gov.in/",
+    "states": [
+      "all india"
+    ],
+    "occupations": [
+      "pregnant woman",
+      "mother",
+      "woman"
+    ],
+    "audiences": [
+      "pregnant woman",
+      "mother",
+      "woman"
+    ],
+    "keywords": [
+      "PMMVY",
+      "maternity benefit",
+      "pregnancy assistance",
+      "गर्भवती महिला",
+      "मातृत्व लाभ"
+    ],
+    "verified": true,
+    "source_type": "Women and Child Development portal",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Confirm current conditions with local Anganwadi/health worker.",
+    "min_age": null,
+    "max_age": null,
+    "age_requirement": "Check current PMMVY eligibility rules with the Anganwadi/health worker; age and pregnancy/child conditions may apply."
+  },
+  {
+    "id": "sukanya",
+    "name": "Sukanya Samriddhi Account (SSA)",
+    "category": "girl_child_savings",
+    "summary": "Government small-savings account for a girl child; it is a savings product, not a grant.",
+    "benefit": "Interest-bearing savings at the notified rate; rates may change quarterly.",
+    "eligibility": "Guardian can open an account for an eligible girl child under current age/account rules.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://www.indiapost.gov.in/",
+    "application_url": "https://www.indiapost.gov.in/",
+    "states": [
+      "all india"
+    ],
+    "occupations": [
+      "parent",
+      "guardian",
+      "woman"
+    ],
+    "audiences": [
+      "parent",
+      "guardian",
+      "woman"
+    ],
+    "keywords": [
+      "Sukanya Samriddhi",
+      "girl child savings",
+      "मुलीचे बचत खाते"
+    ],
+    "verified": true,
+    "source_type": "India Post",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Confirm current interest rate, age limits and withdrawal rules.",
+    "min_age": 0,
+    "max_age": 9,
+    "age_requirement": "Account generally must be opened before the girl child turns 10; confirm current account rules."
+  },
+  {
+    "id": "ujjwala",
+    "name": "Pradhan Mantri Ujjwala Yojana (PMUY)",
+    "category": "clean_cooking",
+    "summary": "Programme providing eligible women access to LPG connections under current rules.",
+    "benefit": "LPG connection-related support; refill subsidy, if any, follows separate current notifications.",
+    "eligibility": "Adult women from households meeting current eligibility and existing-connection criteria.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://www.pmuy.gov.in/",
+    "application_url": "https://www.pmuy.gov.in/",
+    "states": [
+      "all india"
+    ],
+    "occupations": [
+      "woman",
+      "homemaker",
+      "household"
+    ],
+    "audiences": [
+      "woman",
+      "homemaker",
+      "household"
+    ],
+    "keywords": [
+      "Ujjwala",
+      "LPG connection",
+      "cooking gas",
+      "उज्ज्वला",
+      "गॅस कनेक्शन",
+      "ujwala gas",
+      "gas connection yojana",
+      "गॅस योजना"
+    ],
+    "verified": true,
+    "source_type": "PMUY official portal",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Connection assistance and refill subsidy are different; verify current conditions.",
+    "min_age": 18,
+    "max_age": null,
+    "age_requirement": "Applicant must generally be an adult woman (18+); household and existing-LPG-connection conditions also apply."
+  },
+  {
+    "id": "pmay_u",
+    "name": "Pradhan Mantri Awas Yojana – Urban 2.0 (PMAY-U 2.0)",
+    "category": "urban_housing",
+    "summary": "Urban housing mission with assistance routes for eligible urban families.",
+    "benefit": "Housing assistance or interest-related support depends on component and current guidelines.",
+    "eligibility": "Urban families meeting selected component's income, existing-house, property and beneficiary rules.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://pmay-urban.gov.in/",
+    "application_url": "https://pmay-urban.gov.in/",
+    "states": [
+      "all india"
+    ],
+    "occupations": [
+      "worker",
+      "urban poor",
+      "low income household",
+      "family"
+    ],
+    "audiences": [
+      "worker",
+      "urban poor",
+      "low income household",
+      "family"
+    ],
+    "keywords": [
+      "PMAY Urban",
+      "house subsidy",
+      "urban housing",
+      "घरकुल",
+      "आवास योजना शहरी",
+      "ghar yojana",
+      "housing scheme",
+      "ghar sathi yojana",
+      "घर योजना"
+    ],
+    "verified": true,
+    "source_type": "Ministry of Housing and Urban Affairs",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Check current PMAY-U 2.0 component and urban local body process.",
+    "min_age": null,
+    "max_age": null,
+    "age_requirement": "Depends on the selected PMAY-U 2.0 component and household/property rules."
+  },
+  {
+    "id": "pmay_g",
+    "name": "Pradhan Mantri Awaas Yojana – Gramin (PMAY-G)",
+    "category": "rural_housing",
+    "summary": "Rural housing programme for eligible households identified through the applicable selection and verification process.",
+    "benefit": "Housing assistance in stages at rates prescribed by current programme/state rules.",
+    "eligibility": "Eligible rural households under current official selection lists and verification rules.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://pmayg.nic.in/",
+    "application_url": "https://pmayg.nic.in/",
+    "states": [
+      "all india"
+    ],
+    "occupations": [
+      "rural household",
+      "worker",
+      "farmer",
+      "family"
+    ],
+    "audiences": [
+      "rural household",
+      "worker",
+      "farmer",
+      "family"
+    ],
+    "keywords": [
+      "PMAY-G",
+      "rural housing",
+      "house construction",
+      "घरकुल योजना",
+      "ग्रामीण आवास"
+    ],
+    "verified": true,
+    "source_type": "PMAY-G official portal",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Low income alone does not guarantee selection; check official beneficiary status.",
+    "min_age": null,
+    "max_age": null,
+    "age_requirement": "No universal age cutoff stated here; beneficiary selection and household rules apply."
+  },
+  {
+    "id": "pmjay",
+    "name": "Ayushman Bharat – Pradhan Mantri Jan Arogya Yojana (AB PM-JAY)",
+    "category": "health_cover",
+    "summary": "Health assurance for eligible beneficiary families for covered hospital care at empanelled hospitals.",
+    "benefit": "Cashless covered treatment under the scheme-defined coverage and package rules.",
+    "eligibility": "Eligibility depends on the official beneficiary database and applicable government rules.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://pmjay.gov.in/",
+    "application_url": "https://pmjay.gov.in/",
+    "states": [
+      "all india"
+    ],
+    "occupations": [
+      "family",
+      "worker",
+      "senior citizen",
+      "low income household"
+    ],
+    "audiences": [
+      "family",
+      "worker",
+      "senior citizen",
+      "low income household"
+    ],
+    "keywords": [
+      "Ayushman Bharat",
+      "PM-JAY",
+      "hospital treatment",
+      "आयुष्मान कार्ड",
+      "मोफत उपचार",
+      "ayushman card",
+      "ayushman bharat card"
+    ],
+    "verified": true,
+    "source_type": "National Health Authority",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Not all residents are automatically covered; check beneficiary database and hospital/package.",
+    "min_age": null,
+    "max_age": null,
+    "age_requirement": "No universal age cutoff stated here; check the official beneficiary database and current state rules."
+  },
+  {
+    "id": "mjpjy",
+    "name": "Mahatma Jyotirao Phule Jan Arogya Yojana (MJPJAY)",
+    "category": "maharashtra_health_cover",
+    "summary": "Maharashtra health assurance programme for eligible residents under state rules and empanelled-hospital arrangements.",
+    "benefit": "Cashless treatment for covered packages, subject to beneficiary verification and current rules.",
+    "eligibility": "Eligibility and documents depend on current Maharashtra government rules and beneficiary category.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://www.jeevandayee.gov.in/",
+    "application_url": "https://www.jeevandayee.gov.in/",
+    "states": [
+      "maharashtra"
+    ],
+    "occupations": [
+      "family",
+      "worker",
+      "senior citizen",
+      "patient"
+    ],
+    "audiences": [
+      "family",
+      "worker",
+      "senior citizen",
+      "patient"
+    ],
+    "keywords": [
+      "MJPJAY",
+      "hospital bill",
+      "आरोग्य योजना",
+      "कॅशलेस उपचार"
+    ],
+    "verified": true,
+    "source_type": "Maharashtra health scheme portal",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Covered packages, eligibility and hospital lists can change.",
+    "min_age": null,
+    "max_age": null,
+    "age_requirement": "No universal age cutoff stated here; check current Maharashtra beneficiary rules."
+  },
+  {
+    "id": "apy",
+    "name": "Atal Pension Yojana (APY)",
+    "category": "pension_savings",
+    "summary": "Contributory pension scheme for eligible subscribers who pay prescribed contributions.",
+    "benefit": "Pension after the scheme age under the selected slab and contribution rules; not a free pension.",
+    "eligibility": "Joining age and exclusions apply; check current rules with bank/post office.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://www.npscra.nsdl.co.in/",
+    "application_url": "https://www.npscra.nsdl.co.in/",
+    "states": [
+      "all india"
+    ],
+    "occupations": [
+      "worker",
+      "self employed",
+      "small business owner",
+      "unorganised worker"
+    ],
+    "audiences": [
+      "worker",
+      "self employed",
+      "small business owner",
+      "unorganised worker"
+    ],
+    "keywords": [
+      "Atal Pension",
+      "APY",
+      "old age pension",
+      "वृद्धापकाळ पेन्शन",
+      "atal pension",
+      "pension yojana",
+      "पेन्शन",
+      "पेन्शन योजना"
+    ],
+    "verified": true,
+    "source_type": "Pension administration portal",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Contribution depends on age and selected pension; verify current joining rules.",
+    "min_age": 18,
+    "max_age": 40,
+    "age_requirement": "Entry age generally 18–40; contributions depend on joining age and selected pension."
+  },
+  {
+    "id": "nsap",
+    "name": "National Social Assistance Programme (NSAP) – pension components",
+    "category": "social_pension",
+    "summary": "Central social assistance includes pension components for eligible older people, widows and persons with disabilities.",
+    "benefit": "Amount depends on central component and state contribution; state rules vary.",
+    "eligibility": "Applicants must meet the relevant age/disability/widowhood and poverty or other criteria.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://nsap.nic.in/",
+    "application_url": "https://nsap.nic.in/",
+    "states": [
+      "all india"
+    ],
+    "occupations": [
+      "senior citizen",
+      "widow",
+      "person with disability",
+      "low income household"
+    ],
+    "audiences": [
+      "senior citizen",
+      "widow",
+      "person with disability",
+      "low income household"
+    ],
+    "keywords": [
+      "old age pension",
+      "widow pension",
+      "disability pension",
+      "वृद्ध पेन्शन",
+      "विधवा पेन्शन"
+    ],
+    "verified": true,
+    "source_type": "NSAP official portal",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Confirm exact Maharashtra pension scheme and current amount.",
+    "min_age": null,
+    "max_age": null,
+    "age_requirement": "Varies by pension component; old-age pension commonly has a minimum age, while widow/disability components differ."
+  },
+  {
+    "id": "svanidhi",
+    "name": "PM Street Vendor's AtmaNirbhar Nidhi (PM SVANidhi)",
+    "category": "street_vendor_credit",
+    "summary": "Credit support for eligible street vendors, subject to current tranches and lending rules.",
+    "benefit": "Working-capital loan facilities; loan approval is not guaranteed and must be repaid.",
+    "eligibility": "Street vendors meeting current scheme identification/certificate or local-body verification requirements.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://pmsvanidhi.mohua.gov.in/",
+    "application_url": "https://pmsvanidhi.mohua.gov.in/",
+    "states": [
+      "all india"
+    ],
+    "occupations": [
+      "street vendor",
+      "hawker",
+      "small business owner",
+      "self employed"
+    ],
+    "audiences": [
+      "street vendor",
+      "hawker",
+      "small business owner",
+      "self employed"
+    ],
+    "keywords": [
+      "PM SVANidhi",
+      "street vendor loan",
+      "hawker loan",
+      "फेरीवाला कर्ज"
+    ],
+    "verified": true,
+    "source_type": "Ministry of Housing and Urban Affairs",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "This is credit, not a grant; check current terms.",
+    "min_age": null,
+    "max_age": null,
+    "age_requirement": "No universal age cutoff stated here; current vendor identification and lender rules apply."
+  },
+  {
+    "id": "vishwakarma",
+    "name": "PM Vishwakarma",
+    "category": "traditional_artisan_support",
+    "summary": "Support for eligible traditional artisans/craftspeople in notified trades, including training, toolkit and credit components.",
+    "benefit": "Toolkit/training/credit support may be available under current scheme rules.",
+    "eligibility": "Traditional artisans in notified trades who meet current age, trade, family and other criteria.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://pmvishwakarma.gov.in/",
+    "application_url": "https://pmvishwakarma.gov.in/",
+    "states": [
+      "all india"
+    ],
+    "occupations": [
+      "artisan",
+      "craftsperson",
+      "carpenter",
+      "blacksmith",
+      "potter",
+      "tailor",
+      "mason",
+      "cobbler"
+    ],
+    "audiences": [
+      "artisan",
+      "craftsperson",
+      "carpenter",
+      "blacksmith",
+      "potter",
+      "tailor",
+      "mason",
+      "cobbler"
+    ],
+    "keywords": [
+      "PM Vishwakarma",
+      "artisan",
+      "toolkit",
+      "कारागीर",
+      "विश्वकर्मा योजना",
+      "karigar yojana",
+      "vishwakarma yojana",
+      "कारागीर योजना"
+    ],
+    "verified": true,
+    "source_type": "PM Vishwakarma official portal",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Only notified trades and verified applicants qualify; check current status.",
+    "min_age": 18,
+    "max_age": null,
+    "age_requirement": "Applicant generally must be at least 18 and work in a notified traditional trade."
+  },
+  {
+    "id": "pmjdy",
+    "name": "Pradhan Mantri Jan-Dhan Yojana (PMJDY)",
+    "category": "financial_inclusion",
+    "summary": "Financial inclusion programme supporting access to basic bank accounts and related services.",
+    "benefit": "Basic bank account access; overdraft/insurance features have separate conditions and are not automatic.",
+    "eligibility": "Individuals who meet bank account opening and KYC requirements.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://pmjdy.gov.in/",
+    "application_url": "https://pmjdy.gov.in/",
+    "states": [
+      "all india"
+    ],
+    "occupations": [
+      "adult",
+      "worker",
+      "farmer",
+      "woman",
+      "student",
+      "low income household"
+    ],
+    "audiences": [
+      "adult",
+      "worker",
+      "farmer",
+      "woman",
+      "student",
+      "low income household"
+    ],
+    "keywords": [
+      "Jan Dhan",
+      "bank account",
+      "DBT account",
+      "जनधन खाते",
+      "बँक खाते"
+    ],
+    "verified": true,
+    "source_type": "PMJDY official portal",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Do not promise overdraft or insurance without checking specific eligibility.",
+    "min_age": null,
+    "max_age": null,
+    "age_requirement": "A minor may have different account-opening rules; ask a participating bank about the appropriate account."
+  },
+  {
+    "id": "pmjjby",
+    "name": "Pradhan Mantri Jeevan Jyoti Bima Yojana (PMJJBY)",
+    "category": "life_insurance",
+    "summary": "Renewable one-year life insurance through participating banks/post offices for eligible subscribers.",
+    "benefit": "Life cover under current policy terms in return for an annual premium.",
+    "eligibility": "Eligible account holders within current joining/renewal age band who consent to premium debit.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://jansuraksha.gov.in/",
+    "application_url": "https://jansuraksha.gov.in/",
+    "states": [
+      "all india"
+    ],
+    "occupations": [
+      "adult",
+      "worker",
+      "farmer",
+      "self employed"
+    ],
+    "audiences": [
+      "adult",
+      "worker",
+      "farmer",
+      "self employed"
+    ],
+    "keywords": [
+      "PMJJBY",
+      "life insurance",
+      "जीवन विमा",
+      "life cover"
+    ],
+    "verified": true,
+    "source_type": "Jan Suraksha official portal",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Insurance exclusions, premium and claim conditions apply.",
+    "min_age": 18,
+    "max_age": 50,
+    "age_requirement": "Entry generally ages 18–50; renewal and coverage conditions differ. Confirm current policy terms."
+  },
+  {
+    "id": "pmsby",
+    "name": "Pradhan Mantri Suraksha Bima Yojana (PMSBY)",
+    "category": "accident_insurance",
+    "summary": "Renewable accident insurance through participating banks/post offices for eligible account holders.",
+    "benefit": "Accidental death/disability cover under current policy terms.",
+    "eligibility": "Eligible account holders within the current age range who consent to enrolment and premium debit.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://jansuraksha.gov.in/",
+    "application_url": "https://jansuraksha.gov.in/",
+    "states": [
+      "all india"
+    ],
+    "occupations": [
+      "adult",
+      "worker",
+      "farmer",
+      "self employed"
+    ],
+    "audiences": [
+      "adult",
+      "worker",
+      "farmer",
+      "self employed"
+    ],
+    "keywords": [
+      "PMSBY",
+      "accident insurance",
+      "अपघात विमा",
+      "disability cover"
+    ],
+    "verified": true,
+    "source_type": "Jan Suraksha official portal",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Only defined accidental events are covered; policy conditions and valid claim documents apply.",
+    "min_age": 18,
+    "max_age": 70,
+    "age_requirement": "Generally ages 18–70; confirm current enrolment and policy terms."
+  },
+  {
+    "id": "women_helpline_181",
+    "name": "Women Helpline 181 – Maharashtra",
+    "category": "women_support_service",
+    "summary": "Government-listed helpline for women seeking assistance and referral; this is a service, not a cash benefit.",
+    "benefit": "Telephone assistance/referral within the service scope.",
+    "eligibility": "Women seeking support or information; no scheme eligibility is needed to call.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://womenchild.maharashtra.gov.in/en/",
+    "application_url": "https://womenchild.maharashtra.gov.in/en/",
+    "states": [
+      "maharashtra"
+    ],
+    "occupations": [
+      "woman",
+      "girl",
+      "family"
+    ],
+    "audiences": [
+      "woman",
+      "girl",
+      "family"
+    ],
+    "keywords": [
+      "women helpline",
+      "181",
+      "महिला हेल्पलाइन",
+      "महिला मदत"
+    ],
+    "verified": true,
+    "source_type": "Maharashtra Women and Child Development",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "For immediate danger, contact emergency services as well.",
+    "min_age": null,
+    "max_age": null,
+    "age_requirement": "No age limit to ask for information; service scope and referral depend on the situation."
+  },
+  {
+    "id": "pre_matric",
+    "name": "MahaDBT Pre-Matric Scholarship listings",
+    "category": "school_scholarship",
+    "summary": "MahaDBT lists multiple pre-matric schemes from Maharashtra departments for eligible school students.",
+    "benefit": "Varies by exact scheme and category; may include scholarship or educational support.",
+    "eligibility": "Depends on the selected scheme, class, category, income, domicile and school rules.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://mahadbt.maharashtra.gov.in/",
+    "application_url": "https://mahadbt.maharashtra.gov.in/",
+    "states": [
+      "maharashtra"
+    ],
+    "occupations": [
+      "student",
+      "school student"
+    ],
+    "audiences": [
+      "student",
+      "school student"
+    ],
+    "keywords": [
+      "pre matric scholarship",
+      "school scholarship",
+      "शालेय शिष्यवृत्ती"
+    ],
+    "verified": true,
+    "source_type": "MahaDBT",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "This is a family of schemes, not one single benefit; identify the exact scheme.",
+    "min_age": null,
+    "max_age": null,
+    "age_requirement": "Depends on the exact scholarship, class and department rules."
+  },
+  {
+    "id": "iti_stipend",
+    "name": "Stipend for trainees in Craftsman Training Scheme at Government ITIs",
+    "category": "vocational_training",
+    "summary": "MahaDBT lists a stipend for eligible trainees in the Craftsman Training Scheme at government ITIs.",
+    "benefit": "Portal-listed stipend of ₹500 per month; confirm current availability and rules with the ITI.",
+    "eligibility": "Trainees in covered courses at government ITIs who satisfy current scheme conditions.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://mahadbt.maharashtra.gov.in/",
+    "application_url": "https://mahadbt.maharashtra.gov.in/",
+    "states": [
+      "maharashtra"
+    ],
+    "occupations": [
+      "student",
+      "iti trainee",
+      "vocational trainee"
+    ],
+    "audiences": [
+      "student",
+      "iti trainee",
+      "vocational trainee"
+    ],
+    "keywords": [
+      "ITI stipend",
+      "craftsman training",
+      "आयटीआय स्टायपेंड",
+      "कौशल्य प्रशिक्षण"
+    ],
+    "verified": true,
+    "source_type": "MahaDBT",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Confirm the scheme is active for the applicant's batch and course.",
+    "min_age": null,
+    "max_age": null,
+    "age_requirement": "Depends on the ITI course and current department rules."
+  },
+  {
+    "id": "apprenticeship_maha",
+    "name": "Maharashtra Apprenticeship Promotion Scheme",
+    "category": "apprenticeship",
+    "summary": "Maharashtra DBT portal lists apprenticeship-related support under current programme rules.",
+    "benefit": "Apprenticeship-linked support/stipend as defined by current department notification.",
+    "eligibility": "Candidates and establishments meeting current apprenticeship and scheme conditions.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://mahadbt.maharashtra.gov.in/",
+    "application_url": "https://mahadbt.maharashtra.gov.in/",
+    "states": [
+      "maharashtra"
+    ],
+    "occupations": [
+      "student",
+      "job seeker",
+      "apprentice",
+      "trainee",
+      "worker"
+    ],
+    "audiences": [
+      "student",
+      "job seeker",
+      "apprentice",
+      "trainee",
+      "worker"
+    ],
+    "keywords": [
+      "apprenticeship",
+      "job training",
+      "stipend",
+      "शिकाऊ उमेदवारी"
+    ],
+    "verified": true,
+    "source_type": "MahaDBT",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Verify current intake, stipend and employer participation.",
+    "min_age": null,
+    "max_age": null,
+    "age_requirement": "Age requirements depend on the specific apprenticeship and current notification."
+  },
+  {
+    "id": "labour_directory",
+    "name": "Maharashtra Labour Department welfare schemes (portal directory)",
+    "category": "worker_welfare",
+    "summary": "MahaDBT lists labour-related welfare schemes for defined worker categories.",
+    "benefit": "Varies by individual scheme; may include education, welfare or other assistance.",
+    "eligibility": "Depends on specific scheme, worker registration, occupation, income and other conditions.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://mahadbt.maharashtra.gov.in/",
+    "application_url": "https://mahadbt.maharashtra.gov.in/",
+    "states": [
+      "maharashtra"
+    ],
+    "occupations": [
+      "worker",
+      "construction worker",
+      "labourer",
+      "unorganised worker"
+    ],
+    "audiences": [
+      "worker",
+      "construction worker",
+      "labourer",
+      "unorganised worker"
+    ],
+    "keywords": [
+      "labour welfare",
+      "construction worker",
+      "कामगार योजना",
+      "मजूर मदत"
+    ],
+    "verified": true,
+    "source_type": "MahaDBT",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Directory category, not a single benefit; identify the exact scheme.",
+    "min_age": null,
+    "max_age": null,
+    "age_requirement": "Depends on the exact labour welfare scheme and worker-registration rules."
+  },
+  {
+    "id": "my_scheme",
+    "name": "myScheme – Government scheme discovery portal",
+    "category": "scheme_discovery",
+    "summary": "Government of India scheme-discovery portal for finding central and state schemes by circumstances.",
+    "benefit": "No direct benefit; it helps discover individual schemes and official application links.",
+    "eligibility": "Anyone can search; eligibility belongs to each individual scheme.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://www.myscheme.gov.in/",
+    "application_url": "https://www.myscheme.gov.in/",
+    "states": [
+      "all india"
+    ],
+    "occupations": [
+      "farmer",
+      "student",
+      "woman",
+      "worker",
+      "senior citizen",
+      "entrepreneur",
+      "person with disability"
+    ],
+    "audiences": [
+      "farmer",
+      "student",
+      "woman",
+      "worker",
+      "senior citizen",
+      "entrepreneur",
+      "person with disability"
+    ],
+    "keywords": [
+      "find schemes",
+      "government benefits",
+      "सरकारी योजना",
+      "योजना शोधा"
+    ],
+    "verified": true,
+    "source_type": "myScheme official portal",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Confirm each scheme's details and deadline with the implementing department.",
+    "min_age": null,
+    "max_age": null,
+    "age_requirement": "No age limit to browse; each listed scheme has its own age rules."
+  },
+  {
+    "id": "mahadbt_farmer_directory",
+    "name": "MahaDBT Farmer Schemes – agriculture subsidy directory",
+    "category": "farmer_subsidies",
+    "summary": "Official Maharashtra directory for components including irrigation, mechanisation, horticulture and category-specific agriculture support.",
+    "benefit": "Varies by component; this directory is not itself one benefit.",
+    "eligibility": "Depends on component, Farmer ID, land/crop details, category and current selection rules.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://mahadbt.maharashtra.gov.in/Farmer/Login/FCFSNonAadhaarProfileList",
+    "application_url": "https://mahadbt.maharashtra.gov.in/Farmer/Login/FCFSNonAadhaarProfileList",
+    "states": [
+      "maharashtra"
+    ],
+    "occupations": [
+      "farmer",
+      "agriculture",
+      "cultivator",
+      "horticulture grower"
+    ],
+    "audiences": [
+      "farmer",
+      "agriculture",
+      "cultivator",
+      "horticulture grower"
+    ],
+    "keywords": [
+      "MahaDBT farmer",
+      "farmer subsidy",
+      "शेतकरी योजना",
+      "शेती अनुदान"
+    ],
+    "verified": true,
+    "source_type": "MahaDBT Farmer Schemes",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Use as a pointer to the live catalogue, not proof of eligibility.",
+    "min_age": null,
+    "max_age": null,
+    "age_requirement": "No universal age cutoff; each listed farmer component has its own conditions."
+  },
+  {
+    "id": "special_assistance_pension",
+    "name": "MahaDBT Special Assistance and Pension Scheme listings",
+    "category": "social_assistance",
+    "summary": "MahaDBT provides listings for Maharashtra special-assistance and pension schemes.",
+    "benefit": "Varies by named pension/assistance scheme and current government rules.",
+    "eligibility": "Depends on exact scheme, age, disability, income, residence or other category criteria.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://mahadbt.maharashtra.gov.in/",
+    "application_url": "https://mahadbt.maharashtra.gov.in/",
+    "states": [
+      "maharashtra"
+    ],
+    "occupations": [
+      "senior citizen",
+      "person with disability",
+      "widow",
+      "low income household"
+    ],
+    "audiences": [
+      "senior citizen",
+      "person with disability",
+      "widow",
+      "low income household"
+    ],
+    "keywords": [
+      "pension",
+      "special assistance",
+      "पेन्शन योजना",
+      "विशेष सहाय्य"
+    ],
+    "verified": true,
+    "source_type": "MahaDBT",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Directory entry; verify exact scheme name and current amount.",
+    "min_age": null,
+    "max_age": null,
+    "age_requirement": "Varies by exact pension/assistance scheme; age rules differ by category."
+  },
+  {
+    "id": "surya_ghar",
+    "name": "PM Surya Ghar: Muft Bijli Yojana",
+    "category": "rooftop_solar",
+    "summary": "Residential rooftop solar programme with central financial assistance for eligible grid-connected consumers.",
+    "benefit": "Assistance for eligible rooftop solar installations; amount depends on system capacity and current guidelines.",
+    "eligibility": "Residential electricity consumers meeting scheme, DISCOM, rooftop and vendor requirements.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://pmsuryaghar.gov.in/",
+    "application_url": "https://pmsuryaghar.gov.in/",
+    "states": [
+      "all india"
+    ],
+    "occupations": [
+      "homeowner",
+      "household",
+      "resident"
+    ],
+    "audiences": [
+      "homeowner",
+      "household",
+      "resident"
+    ],
+    "keywords": [
+      "solar panel subsidy",
+      "rooftop solar",
+      "PM Surya Ghar",
+      "सौर ऊर्जा",
+      "सोलर पॅनल"
+    ],
+    "verified": true,
+    "source_type": "PM Surya Ghar official portal",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Subsidy depends on capacity, technical approval and the official process.",
+    "min_age": null,
+    "max_age": null,
+    "age_requirement": "No universal age cutoff stated here; residential electricity consumer and scheme rules apply."
+  },
+  {
+    "id": "pm_sym",
+    "name": "Pradhan Mantri Shram Yogi Maandhan (PM-SYM)",
+    "category": "unorganised_worker_pension",
+    "summary": "Contributory pension scheme for eligible unorganised workers who pay prescribed contributions.",
+    "benefit": "Monthly pension after the prescribed age, subject to contributions and rules.",
+    "eligibility": "Eligible unorganised workers meeting current entry-age, income and exclusion conditions.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://maandhan.in/",
+    "application_url": "https://maandhan.in/",
+    "states": [
+      "all india"
+    ],
+    "occupations": [
+      "unorganised worker",
+      "labourer",
+      "street vendor",
+      "domestic worker",
+      "self employed"
+    ],
+    "audiences": [
+      "unorganised worker",
+      "labourer",
+      "street vendor",
+      "domestic worker",
+      "self employed"
+    ],
+    "keywords": [
+      "PM-SYM",
+      "Shram Yogi Maandhan",
+      "worker pension",
+      "असंघटित कामगार पेन्शन",
+      "shram yogi pension",
+      "kamgar pension",
+      "कामगार पेन्शन"
+    ],
+    "verified": true,
+    "source_type": "Maandhan official portal",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Contribution depends on joining age; verify the current contribution chart.",
+    "min_age": 18,
+    "max_age": 40,
+    "age_requirement": "Entry generally ages 18–40; monthly contribution depends on joining age."
+  },
+  {
+    "id": "pm_kmy",
+    "name": "Pradhan Mantri Kisan Maandhan Yojana (PM-KMY)",
+    "category": "farmer_pension",
+    "summary": "Voluntary contributory pension scheme for eligible small and marginal farmers.",
+    "benefit": "Monthly pension after the prescribed age if required contributions are paid.",
+    "eligibility": "Eligible small and marginal farmers within the scheme's entry-age range; exclusions apply.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://maandhan.in/",
+    "application_url": "https://maandhan.in/",
+    "states": [
+      "all india"
+    ],
+    "occupations": [
+      "farmer",
+      "small farmer",
+      "marginal farmer"
+    ],
+    "audiences": [
+      "farmer",
+      "small farmer",
+      "marginal farmer"
+    ],
+    "keywords": [
+      "PM-KMY",
+      "farmer pension",
+      "Kisan Maandhan",
+      "शेतकरी पेन्शन",
+      "kisan maandhan",
+      "shetkari pension"
+    ],
+    "verified": true,
+    "source_type": "Maandhan official portal",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Contributory pension; check current entry criteria and exclusions.",
+    "min_age": 18,
+    "max_age": 40,
+    "age_requirement": "Entry generally ages 18–40 for eligible small and marginal farmers; exclusions apply."
+  },
+  {
+    "id": "pmkvy",
+    "name": "Pradhan Mantri Kaushal Vikas Yojana / Skill India training listings",
+    "category": "skill_training",
+    "summary": "Skill-development programme and portal for eligible training and certification through approved courses/providers.",
+    "benefit": "Training/certification support for approved courses; employment or income is not guaranteed.",
+    "eligibility": "Varies by course, candidate, provider and current programme guidelines.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://www.skillindiadigital.gov.in/",
+    "application_url": "https://www.skillindiadigital.gov.in/",
+    "states": [
+      "all india"
+    ],
+    "occupations": [
+      "student",
+      "job seeker",
+      "worker",
+      "unemployed youth",
+      "trainee"
+    ],
+    "audiences": [
+      "student",
+      "job seeker",
+      "worker",
+      "unemployed youth",
+      "trainee"
+    ],
+    "keywords": [
+      "PMKVY",
+      "skill training",
+      "free training",
+      "कौशल्य विकास",
+      "रोजगार प्रशिक्षण"
+    ],
+    "verified": true,
+    "source_type": "Skill India Digital",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Verify currently running batches and course conditions.",
+    "min_age": null,
+    "max_age": null,
+    "age_requirement": "Age requirements vary by course, batch and current programme rules."
+  },
+  {
+    "id": "vayoshree",
+    "name": "Maharashtra Chief Minister Vayoshree Scheme",
+    "category": "senior_citizen_assistance",
+    "summary": "Maharashtra scheme listed on the state DBT portal for eligible senior citizens.",
+    "benefit": "Assistance under current state guidelines; confirm current amount and covered items/services.",
+    "eligibility": "Senior citizens meeting current age, income, residence and other scheme conditions.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://mahadbt.maharashtra.gov.in/",
+    "application_url": "https://mahadbt.maharashtra.gov.in/",
+    "states": [
+      "maharashtra"
+    ],
+    "occupations": [
+      "senior citizen",
+      "older adult"
+    ],
+    "audiences": [
+      "senior citizen",
+      "older adult"
+    ],
+    "keywords": [
+      "Vayoshree",
+      "senior citizen assistance",
+      "वयोश्री",
+      "ज्येष्ठ नागरिक मदत"
+    ],
+    "verified": true,
+    "source_type": "MahaDBT",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "Confirm current application availability and exact eligibility.",
+    "min_age": 65,
+    "max_age": null,
+    "age_requirement": "Generally intended for senior citizens aged 65+; verify current Maharashtra rules."
+  },
+  {
+    "id": "msp_procurement",
+    "name": "MSP procurement and agricultural marketing information",
+    "category": "agriculture_marketing",
+    "summary": "Government procurement arrangements apply to specified crops, agencies, states and procurement periods.",
+    "benefit": "Sale at notified MSP may be available for eligible notified crops at designated centres during active windows.",
+    "eligibility": "Depends on crop, state, agency, farmer registration, quality standards and current season notice.",
+    "documents": [
+      "Aadhaar or accepted identity proof",
+      "bank account details where payment is involved",
+      "residence/category/income/cultivation documents as required by the specific scheme"
+    ],
+    "how_to_apply": "Check the official scheme page for the current rules and application window; apply through the named portal, bank, local government office or authorized service centre as directed there.",
+    "official_url": "https://mahasahakar.maharashtra.gov.in/en/schemes-programmes/",
+    "application_url": "https://mahasahakar.maharashtra.gov.in/en/schemes-programmes/",
+    "states": [
+      "maharashtra"
+    ],
+    "occupations": [
+      "farmer",
+      "agriculture",
+      "cultivator"
+    ],
+    "audiences": [
+      "farmer",
+      "agriculture",
+      "cultivator"
+    ],
+    "keywords": [
+      "MSP",
+      "minimum support price",
+      "crop procurement",
+      "हमीभाव",
+      "किमान आधारभूत किंमत",
+      "hamibhav",
+      "hamibhav yojana",
+      "हमीभाव योजना"
+    ],
+    "verified": true,
+    "source_type": "Maharashtra Cooperation Department",
+    "source_checked_date": "2026-10-24",
+    "data_quality": "official_source_summary",
+    "status_note": "MSP does not mean every crop is purchased everywhere; verify crop, centre, quality and dates.",
+    "min_age": null,
+    "max_age": null,
+    "age_requirement": "No universal age cutoff; farmer registration, crop, procurement window and agency rules apply."
   }
 ]
