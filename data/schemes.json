@@ -1,0 +1,28 @@
+[
+  {
+    "id": "pm-kisan-example",
+    "name": "PM-KISAN (verify current criteria)",
+    "description": "A central sector scheme associated with income support for eligible landholding farmer families.",
+    "audiences": ["farmer"],
+    "states": ["all"],
+    "age_min": null,
+    "age_max": null,
+    "requires_verification": ["landholding and exclusion criteria", "current registration status", "latest official guidelines"],
+    "official_url": "https://pmkisan.gov.in/",
+    "verified": false,
+    "notes": "Prototype seed record only. Verify current eligibility and rules from the official portal before presenting as advice."
+  },
+  {
+    "id": "national-scholarship-portal-example",
+    "name": "National Scholarship Portal (scheme discovery)",
+    "description": "An official portal through which students can discover and access eligible scholarship schemes.",
+    "audiences": ["student"],
+    "states": ["all"],
+    "age_min": null,
+    "age_max": null,
+    "requires_verification": ["specific scholarship", "course and institution", "income and category criteria where applicable", "application dates"],
+    "official_url": "https://scholarships.gov.in/",
+    "verified": false,
+    "notes": "This is a portal, not a guarantee of eligibility for any particular scholarship. Verify the relevant scheme's current rules."
+  }
+]
